@@ -9,7 +9,7 @@ body {
 
 #header {
   background-color: #d5b8ff;
-  line-height: 120px;
+  line-height: 90px;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -38,7 +38,7 @@ body {
 
 #url-input {
   width: 50%;
-  line-height: inherit;
+  line-height: 50px;
   display: inline-block;
   margin-left: 2%;
   margin-right: 3%;
@@ -70,12 +70,27 @@ body {
   margin: 4px;
 }
 
+#timeInput {
+  width: 350px;
+  line-height: 30px;
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  margin: auto;
+}
+
+#timeInput input {
+  width: 35px;
+  border: solid 1px #9a12b3;
+  text-align: center;
+}
+
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 250px;
   position: fixed;
   z-index: 1;
-  top: 120px;
+  top: 90px;
   left: 0;
   overflow-x: hidden;
   padding-top: 0px;
@@ -118,8 +133,9 @@ body {
 }
 
 .thumb {
-  width: 186px;
-  height: 105px;
+  width: 533px;
+  height: 300px;
+  margin: auto;
 }
 
 

@@ -5,8 +5,8 @@ function openNav() {
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("mySidenav").style.width = "10px";
+  document.getElementById("main").style.marginLeft = "10px";
 }
 
 
@@ -19,4 +19,20 @@ function menuClick() {
       closeNav()
       menuClosed = true;
     }
+}
+
+var originalThumb = document.getElementById("thumb1");
+originalThumb.style.display = "none";
+
+function snip () {
+  var startInput = document.getElementById("startTime").value;
+  var endInput = document.getElementById("endTime").value;
+  var startT = startInput.split(":");
+  var endT = endInput.split(":");
+  startT = startT[0]*60+startT[1]*1;
+  endT = endT[0]*60+endT[1]*1;
+  var url = document.getElementById("input-box").value;
+  var embedUrl = url.split("watch?v=");
+  document.getElementById("thumb1").src = "https://www.youtube.com/embed/" + embedUrl[1] + "?start=" + startT + "&end=" + endT + "&version=3";
+  originalThumb.style.display = "block";
 }

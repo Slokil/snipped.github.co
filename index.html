@@ -10,19 +10,22 @@
 <div class="container">
       <div id="header">
         <img src=img/menu.png onclick="menuClick()">
-        <a href="index.html">Snipped</a>
+        <a href="index.html" id="test">Snipped</a>
         <div id="url-input">
-          <input type="text" name="" value="">
+          <input id ="input-box" type="text" placeholder="Insert YouTube URL">
         </div>
-        <button type="button" name="button">GO</button>
-
+        <button type="button" onclick="snip()">GO</button>
 
         <ul>
           <li>Sign Up</li>
           <li>Log In</li>
           <li>About</li>
         </ul>
-
+        <br>
+        <div id="timeInput">
+          <span>Start at: <input id="startTime" type="text" placeholder="00:00"></span>
+          <span>End at: <input id="endTime" type="text" placeholder="00:00"></span>
+        </div>
       </div>
 </div>
 
@@ -42,10 +45,7 @@
   <div id="main">
 
     <iframe class="thumb" id="thumb1"  src="https://www.youtube.com/embed/oHHSSJDJ4oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe class="thumb" id="thumb1"  src="https://www.youtube.com/embed/oHHSSJDJ4oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe class="thumb" id="thumb1"  src="https://www.youtube.com/embed/oHHSSJDJ4oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe class="thumb" id="thumb1"  src="https://www.youtube.com/embed/oHHSSJDJ4oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe class="thumb" id="thumb1"  src="https://www.youtube.com/embed/oHHSSJDJ4oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
   </div>
   </div>
