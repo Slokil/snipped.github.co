@@ -9,47 +9,66 @@ body {
 
 #header {
   background-color: #d5b8ff;
-  height: 120px;
+  line-height: 120px;
   position: fixed;
-  z-index: 1;
   width: 100%;
+  z-index: 1;
 }
 
-#header-title {
+#header img {
+  vertical-align: middle;
+  height: 35px;
+  width: 35px;
+  margin-left: 1.5%;
+}
+
+#header a {
   color: #8c14fc;
-  line-height: 120px;
+  line-height: inherit;
   letter-spacing: 0.05em;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: bold;
 
-  padding-left: 2%;
-}
-
-#menuButton {
-  float: left;
+  margin-left: 0.5%;
   vertical-align: middle;
-  position: relative;
-  top: 45px;
 
-  height: 25px;
-  width: 25px;
-  margin-left: 2%
 }
 
-#right-menu {
-  line-height: 75px;
+#url-input {
+  width: 50%;
+  line-height: inherit;
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: 3%;
+  vertical-align: middle;
+}
+
+#url-input input{
+  width: 100%;
+  height: 10%;
+  border: 2px solid #9a12b3;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#header button {
+  vertical-align: middle;
+}
+
+#header ul {
+  display: inline;
+  line-height: inherit;
   float: right;
-  position: relative;
-  right: 2%;
+  vertical-align: middle;
+  margin: 0 2% 0 0;
 }
 
-#right-menu li {
+#header li {
   display: inline;
   margin: 4px;
 }
-
 
 .sidenav {
   height: 100%;
@@ -98,13 +117,18 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
+.thumb {
+  width: 186px;
+  height: 105px;
+}
+
+
 #footer {
   background-color: #d5b8ff;
-
-  margin: auto;
-  height: 120px;
-  bottom: 0;
-  position: fixed;
+  height: 60px;
   width: 100%;
+  margin: auto;
+  position: fixed;
+  bottom: 0;
   z-index: 1;
 }
