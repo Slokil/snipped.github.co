@@ -5,6 +5,7 @@ function openNav() {
   document.getElementById("main").style.marginLeft= "250px";
   document.getElementById("videoLink").style.marginLeft= "10px";
   document.getElementById("thumb1").style.marginLeft= "40px";
+  document.getElementById("sidenavLinks").style.display="block";
 }
 
 function closeNav() {
@@ -12,6 +13,7 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "10px";
   document.getElementById("videoLink").style.marginLeft = "10px";
   document.getElementById("thumb1").style.marginLeft = "40px";
+  document.getElementById("sidenavLinks").style.display="none";
 }
 
 
